@@ -1,10 +1,10 @@
 import time
-from urllib import request
 from datetime import datetime
 import socket
+import os
 
 
-URL = 'https://google.com'   # out netwrok host
+HOST = 'google.com'   # out netwrok host
 LOG_INTERVAL = 60            # sec
 # LOG_INTERVAL = 1             # sec
 
@@ -17,14 +17,15 @@ def main():
         request_log()
         time.sleep(LOG_INTERVAL)
 
+def is_live():
+    response = os.system("ping -c 1 " + HOST + " }&/dev/null")
+    return response == 0
+
 def request_log():
     hostnames = socket.gethostbyname(socket.gethostname())
-    try:
-        start = time.time()
-        with request.urlopen(URL, timeout=5):
-            end = time.time()
-            message = '{}: OK <{}> {:.3f}ms'.format(gen_timestamp(), hostnames, end - start)
-    except:
+    if is_live():
+        message = '{}: OK <{}>'.format(gen_timestamp(), hostnames)
+    else:
         message = '{}: NG <{}>'.format(gen_timestamp(), hostnames)
         # message = '\033[31m{}: NG <{}>\033[0m'.format(gen_timestamp(), hostnames)
     with open(get_filename(), 'a') as f:
