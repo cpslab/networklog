@@ -5,8 +5,8 @@ import socket
 
 
 URL = 'https://google.com'   # out netwrok host
-# LOG_INTERVAL = 60            # sec
-LOG_INTERVAL = 5             # sec
+LOG_INTERVAL = 60            # sec
+# LOG_INTERVAL = 1             # sec
 
 def main():
     message = 'Start script at {}'.format(gen_timestamp()) + "\nStatus keyword => ['OK', 'NG']"
