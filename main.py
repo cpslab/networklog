@@ -11,18 +11,23 @@ LOG_INTERVAL = 60
 
 
 def main():
+    print('Start script at {}'.format(gen_timestamp()))
+    print("Status keyword => ['OK', 'NG']")
     while True:
         request_log()
         time.sleep(LOG_INTERVAL)
 
 def request_log():
     hostnames = socket.gethostbyname(socket.gethostname())
-    timestamp_str = datetime.now().strftime("%Y/%m/%d %H:%M:%S")
     try:
         with request.urlopen(URL):
-            print('{}: OK <{}>'.format(timestamp_str, hostnames))
+            print('{}: OK <{}>'.format(gen_timestamp(), hostnames))
     except:
-        print('\033[31m{}: NG <{}>\033[0m'.format(timestamp_str, hostnames))
+        print('\033[31m{}: NG <{}>\033[0m'.format(gen_timestamp(), hostnames))
+
+def gen_timestamp():
+    return datetime.now().strftime("%Y/%m/%d %H:%M:%S")
+
 
 if __name__ == '__main__':
     main()
