@@ -9,8 +9,8 @@ LOG_INTERVAL = 60            # sec
 # LOG_INTERVAL = 1             # sec
 
 def main():
-    message = 'Start script at {}'.format(gen_timestamp()) + "\nStatus keyword => ['OK', 'NG']"
-    with open(get_filename(), 'w') as f:
+    message = "Start script at {}\nStatus keyword => ['OK', 'NG']\n".format(gen_timestamp())
+    with open(get_filename(), 'a') as f:
         f.write(message)
 
     while True:
@@ -25,12 +25,13 @@ def request_log():
             end = time.time()
             message = '{}: OK <{}> {:.3f}ms'.format(gen_timestamp(), hostnames, end - start)
     except:
-        message = '\033[31m{}: NG <{}>\033[0m'.format(gen_timestamp(), hostnames)
-    with open(get_filename(), 'w') as f:
-        f.write(message)
+        message = '{}: NG <{}>'.format(gen_timestamp(), hostnames)
+        # message = '\033[31m{}: NG <{}>\033[0m'.format(gen_timestamp(), hostnames)
+    with open(get_filename(), 'a') as f:
+        f.write(message + "\n")
 
 def get_filename():
-    return datetime.now().strftime("logs/%Y%m%d.log")
+    return datetime.now().strftime("/home/pi/logs/%Y%m%d.log")
 
 def gen_timestamp():
     return datetime.now().strftime("%Y/%m/%d %H:%M:%S")

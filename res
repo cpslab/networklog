@@ -1,0 +1,117 @@
+UID        PID  PPID  C STIME TTY          TIME CMD
+root         1     0  0 15:38 ?        00:00:05 /sbin/init
+root         2     0  0 15:38 ?        00:00:00 [kthreadd]
+root         3     2  0 15:38 ?        00:00:00 [ksoftirqd/0]
+root         5     2  0 15:38 ?        00:00:00 [kworker/0:0H]
+root         7     2  0 15:38 ?        00:00:01 [rcu_sched]
+root         8     2  0 15:38 ?        00:00:00 [rcu_bh]
+root         9     2  0 15:38 ?        00:00:00 [migration/0]
+root        10     2  0 15:38 ?        00:00:00 [migration/1]
+root        11     2  0 15:38 ?        00:00:00 [ksoftirqd/1]
+root        13     2  0 15:38 ?        00:00:00 [kworker/1:0H]
+root        14     2  0 15:38 ?        00:00:00 [migration/2]
+root        15     2  0 15:38 ?        00:00:00 [ksoftirqd/2]
+root        17     2  0 15:38 ?        00:00:00 [kworker/2:0H]
+root        18     2  0 15:38 ?        00:00:00 [migration/3]
+root        19     2  0 15:38 ?        00:00:00 [ksoftirqd/3]
+root        21     2  0 15:38 ?        00:00:00 [kworker/3:0H]
+root        22     2  0 15:38 ?        00:00:00 [kdevtmpfs]
+root        23     2  0 15:38 ?        00:00:00 [netns]
+root        24     2  0 15:38 ?        00:00:00 [perf]
+root        25     2  0 15:38 ?        00:00:00 [khungtaskd]
+root        26     2  0 15:38 ?        00:00:00 [writeback]
+root        27     2  0 15:38 ?        00:00:00 [crypto]
+root        28     2  0 15:38 ?        00:00:00 [bioset]
+root        29     2  0 15:38 ?        00:00:00 [kblockd]
+root        31     2  0 15:38 ?        00:00:00 [rpciod]
+root        32     2  0 15:38 ?        00:00:00 [kswapd0]
+root        33     2  0 15:38 ?        00:00:00 [vmstat]
+root        34     2  0 15:38 ?        00:00:00 [fsnotify_mark]
+root        35     2  0 15:38 ?        00:00:00 [nfsiod]
+root        44     2  0 15:38 ?        00:00:00 [kthrotld]
+root        47     2  0 15:38 ?        00:00:00 [bioset]
+root        48     2  0 15:38 ?        00:00:00 [bioset]
+root        49     2  0 15:38 ?        00:00:00 [bioset]
+root        50     2  0 15:38 ?        00:00:00 [bioset]
+root        51     2  0 15:38 ?        00:00:00 [bioset]
+root        52     2  0 15:38 ?        00:00:00 [bioset]
+root        53     2  0 15:38 ?        00:00:00 [bioset]
+root        54     2  0 15:38 ?        00:00:00 [bioset]
+root        55     2  0 15:38 ?        00:00:00 [bioset]
+root        56     2  0 15:38 ?        00:00:00 [bioset]
+root        57     2  0 15:38 ?        00:00:00 [bioset]
+root        58     2  0 15:38 ?        00:00:00 [bioset]
+root        59     2  0 15:38 ?        00:00:00 [bioset]
+root        60     2  0 15:38 ?        00:00:00 [bioset]
+root        61     2  0 15:38 ?        00:00:00 [bioset]
+root        62     2  0 15:38 ?        00:00:00 [bioset]
+root        63     2  0 15:38 ?        00:00:00 [bioset]
+root        64     2  0 15:38 ?        00:00:00 [bioset]
+root        65     2  0 15:38 ?        00:00:00 [bioset]
+root        66     2  0 15:38 ?        00:00:00 [bioset]
+root        67     2  0 15:38 ?        00:00:00 [bioset]
+root        68     2  0 15:38 ?        00:00:00 [bioset]
+root        69     2  0 15:38 ?        00:00:00 [bioset]
+root        70     2  0 15:38 ?        00:00:00 [bioset]
+root        71     2  0 15:38 ?        00:00:00 [VCHIQ-0]
+root        72     2  0 15:38 ?        00:00:00 [VCHIQr-0]
+root        73     2  0 15:38 ?        00:00:00 [VCHIQs-0]
+root        74     2  0 15:38 ?        00:00:00 [iscsi_eh]
+root        75     2  0 15:38 ?        00:00:00 [dwc_otg]
+root        77     2  0 15:38 ?        00:00:00 [DWC Notificatio]
+root        79     2  0 15:38 ?        00:00:05 [irq/92-mmc1]
+root        80     2  0 15:38 ?        00:00:00 [VCHIQka-0]
+root        81     2  0 15:38 ?        00:00:00 [SMIO]
+root        82     2  0 15:38 ?        00:00:00 [deferwq]
+root        84     2  0 15:38 ?        00:00:00 [bioset]
+root        85     2  0 15:38 ?        00:00:00 [mmcqd/0]
+root        87     2  0 15:38 ?        00:00:00 [jbd2/mmcblk0p2-]
+root        88     2  0 15:38 ?        00:00:00 [ext4-rsv-conver]
+root        89     2  0 15:38 ?        00:00:00 [ipv6_addrconf]
+root       103     2  0 15:38 ?        00:00:00 [kworker/2:1H]
+root       134     1  0 15:38 ?        00:00:01 /lib/systemd/systemd-journald
+root       135     1  0 15:38 ?        00:00:00 /lib/systemd/systemd-udevd
+root       159     2  8 15:38 ?        00:14:12 [w1_bus_master1]
+root       208     2  0 15:38 ?        00:00:00 [cfg80211]
+root       210     2  0 15:38 ?        00:00:00 [brcmf_wq/mmc1:0]
+root       211     2  0 15:38 ?        00:00:03 [brcmf_wdog/mmc1]
+root       400     1  0 15:38 ?        00:00:00 /sbin/wpa_supplicant -s -B -P /run/wpa_supplicant.wlan0.pid -i wlan0 -D nl80211,wext -c /etc/wpa_supplicant/wpa_supplicant.conf
+root       420     1  0 15:38 ?        00:00:00 /usr/sbin/cron -f
+root       423     1  0 15:38 ?        00:00:00 /lib/systemd/systemd-logind
+avahi      432     1  0 15:38 ?        00:00:00 avahi-daemon: running [raspberrypi-cps.local]
+message+   433     1  0 15:38 ?        00:00:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation
+nobody     442     1  0 15:38 ?        00:00:00 /usr/sbin/thd --daemon --triggers /etc/triggerhappy/triggers.d/ --socket /var/run/thd.socket --pidfile /var/run/thd.pid --user nobody /dev/input/event0
+avahi      465   432  0 15:38 ?        00:00:00 avahi-daemon: chroot helper
+root       508     1  0 15:38 ?        00:00:00 /usr/sbin/rsyslogd -n
+root       607     2  0 15:38 ?        00:00:00 [kworker/u9:0]
+root       608     2  0 15:38 ?        00:00:00 [hci0]
+root       609     2  0 15:38 ?        00:00:00 [hci0]
+root       610     1  0 15:38 ?        00:00:00 /usr/bin/hciattach /dev/serial1 bcm43xx 921600 noflow -
+root       612     2  0 15:38 ?        00:00:00 [kworker/u9:1]
+root       615     1  0 15:38 ?        00:00:00 /usr/lib/bluetooth/bluetoothd
+root       711     1  0 15:38 ?        00:00:00 /sbin/dhcpcd -q -w
+root       712     1  0 15:38 ?        00:00:00 /usr/sbin/sshd -D
+ntp        737     1  0 15:38 ?        00:00:00 /usr/sbin/ntpd -p /var/run/ntpd.pid -g -u 106:111
+root       744     1  0 15:38 tty1     00:00:00 /bin/login -f   
+root       745     1  0 15:38 ?        00:00:04 /usr/bin/python /usr/bin/supervisord -c /etc/supervisor/supervisord.conf
+pi         844   744  0 15:38 tty1     00:00:05 -bash
+root       920     2  0 15:38 ?        00:00:00 [kworker/1:1H]
+root      1158     2  0 15:41 ?        00:00:00 [kworker/3:1H]
+root      1526     2  0 15:50 ?        00:00:00 [kworker/0:1H]
+root      2920   712  0 16:29 ?        00:00:00 sshd: pi [priv]     
+pi        2926  2920  0 16:29 ?        00:00:00 sshd: pi@pts/1      
+pi        2928  2926  0 16:29 pts/1    00:00:05 -bash
+root      3686     2  0 16:45 ?        00:00:02 [kworker/u8:1]
+root      3710     2  0 16:52 ?        00:00:04 [kworker/u8:0]
+root      3924     2  0 17:02 ?        00:00:00 [kworker/0:2]
+root      4097     2  0 17:21 ?        00:00:00 [kworker/1:0]
+root      4241     2  0 18:06 ?        00:00:00 [kworker/2:0]
+root      4270     2  0 18:14 ?        00:00:00 [kworker/3:2]
+root      4310     2  0 18:22 ?        00:00:00 [kworker/0:0]
+root      4320     2  0 18:22 ?        00:00:00 [kworker/1:1]
+root      4321     2  0 18:22 ?        00:00:00 [kworker/3:0]
+root      4326     2  0 18:23 ?        00:00:00 [kworker/2:2]
+root      4335     2  0 18:27 ?        00:00:00 [kworker/0:1]
+root      4340     2  0 18:28 ?        00:00:00 [kworker/3:1]
+root      4341     2  0 18:29 ?        00:00:00 [kworker/u8:2]
+pi        4512   844  0 18:32 tty1     00:00:00 ps -ef
