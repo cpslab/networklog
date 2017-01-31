@@ -7,7 +7,8 @@ import socket
 URL = 'https://google.com'
 
 # sec
-LOG_INTERVAL = 60
+LOG_INTERVAL = 1
+# LOG_INTERVAL = 60
 
 
 def main():
@@ -20,8 +21,10 @@ def main():
 def request_log():
     hostnames = socket.gethostbyname(socket.gethostname())
     try:
+        start = time.time()
         with request.urlopen(URL):
-            print('{}: OK <{}>'.format(gen_timestamp(), hostnames))
+            end = time.time()
+            print('{}: OK <{}> {:.3f}ms'.format(gen_timestamp(), hostnames, end - start))
     except:
         print('\033[31m{}: NG <{}>\033[0m'.format(gen_timestamp(), hostnames))
 
